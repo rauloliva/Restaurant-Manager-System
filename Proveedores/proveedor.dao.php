@@ -121,7 +121,7 @@ class ProveedorDAO{
 			$stm=$this->pdo->prepare("SELECT id_proveedor FROM proveedores GROUP BY id_proveedor DESC LIMIT 1");
 			$stm->execute();
 			$r = $stm->fetch(PDO::FETCH_OBJ);
-			return $r->id_proveedor==0?10000:$r->id_proveedor+1;
+			return $r==0?10000:$r->id_proveedor+1;
 		}catch(Exception $e){
 			die($e->getMessage());
 		}
