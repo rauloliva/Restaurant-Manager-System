@@ -122,7 +122,7 @@ class ClienteDAO{
 			$stm=$this->pdo->prepare("SELECT id_cliente FROM clientes GROUP BY id_cliente DESC LIMIT 1");
 			$stm->execute();
 			$r = $stm->fetch(PDO::FETCH_OBJ);
-			return $r->id_cliente==0?10000:$r->id_cliente+1;
+			return $r==null?10000:$r->id_cliente+1;
 		}catch(Exception $e){
 			die($e->getMessage());
 		}
