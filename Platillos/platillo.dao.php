@@ -122,7 +122,7 @@ class PlatilloDAO{
 			$stm=$this->pdo->prepare("SELECT id_platillo FROM platillos GROUP BY id_platillo DESC LIMIT 1");
 			$stm->execute();
 			$r = $stm->fetch(PDO::FETCH_OBJ);
-			return $r->id_platillo==0?10000:$r->id_platillo+1;
+			return $r==0?10000:$r->id_platillo+1;
 		}catch(Exception $e){
 			die($e->getMessage());
 		}
