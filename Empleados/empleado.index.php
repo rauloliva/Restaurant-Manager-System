@@ -95,7 +95,7 @@ if(isset($_REQUEST['action']))
                         </tr>
                         <tr>
                             <th style="text-align:left;">Fecha</th>
-                            <td><input type="text" name="FechaNacimiento" value="<?php echo $alm->__GET('FechaNacimiento'); ?>" style="width:100%;" /></td>
+                            <td><input type="date" name="FechaNacimiento" value="<?php echo $alm->__GET('FechaNacimiento'); ?>" style="width:100%;" /></td>
                         </tr>
                         <tr>
                             <th style="text-align:left;">Sexo</th>
@@ -112,11 +112,11 @@ if(isset($_REQUEST['action']))
                         </tr>
                         <tr>
                             <th style="text-align:left;">Correo</th>
-                            <td><input type="text" name="Correo" value="<?php echo $alm->__GET('Correo'); ?>" style="width:100%;" /></td>
+                            <td><input type="email" name="Correo" value="<?php echo $alm->__GET('Correo'); ?>" style="width:100%;" /></td>
                         </tr>
                         <tr>
                             <th style="text-align:left;">Telefono</th>
-                            <td><input type="text" name="Telefono" value="<?php echo $alm->__GET('Telefono'); ?>" style="width:100%;" /></td>
+                            <td><input type="number" name="Telefono" value="<?php echo $alm->__GET('Telefono'); ?>" style="width:100%;" /></td>
                         </tr>
                         <tr>
                             <th style="text-align:left;">Tipo</th>
@@ -132,7 +132,7 @@ if(isset($_REQUEST['action']))
                         </tr>
                         <tr>
                             <th style="text-align:left;">Sueldo</th>
-                            <td><input type="text" name="Sueldo" value="<?php echo $alm->__GET('Sueldo'); ?>" style="width:100%;" /></td>
+                            <td><input type="number" name="Sueldo" value="<?php echo $alm->__GET('Sueldo'); ?>" style="width:100%;" /></td>
                         </tr>
                         <tr>
                             <th style="text-align:left;">Usuario</th>
@@ -144,7 +144,7 @@ if(isset($_REQUEST['action']))
                         </tr>
                         <tr>
                             <th style="text-align:left;">Fecha Ingreso</th>
-                            <td><input type="text" name="FechaDeIngreso" value="<?php echo $alm->__GET('FechaDeIngreso'); ?>" style="width:100%;" /></td>
+                            <td><input type="date" name="FechaDeIngreso" value="<?php echo $alm->__GET('FechaDeIngreso'); ?>" style="width:100%;" /></td>
                         </tr>
                         <tr>
                             <td colspan="2">
