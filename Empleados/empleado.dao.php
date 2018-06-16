@@ -151,7 +151,7 @@ class EmpleadoDAO{
 			$stm=$this->pdo->prepare("SELECT id_empleados FROM Empleados GROUP BY id_empleados DESC LIMIT 1");
 			$stm->execute();
 			$r = $stm->fetch(PDO::FETCH_OBJ);
-			return $r->id_empleados==0?10000:$r->id_empleados+1;
+			return $r==null?10000:$r->id_empleados+1;
 		}catch(Exception $e){
 			die($e->getMessage());
 		}
