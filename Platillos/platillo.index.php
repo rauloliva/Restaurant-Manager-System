@@ -69,11 +69,11 @@ if(isset($_REQUEST['action']))
                         </tr>
                         <tr>
                             <th style="text-align:left;">Precio Compra</th>
-                            <td><input type="text" name="Precio" value="<?php echo $alm->__GET('Precio'); ?>" style="width:100%;" /></td>
+                            <td><input type="number" name="Precio" value="<?php echo $alm->__GET('Precio'); ?>" style="width:100%;" /></td>
                         </tr>
                         <tr>
                             <th style="text-align:left;">Precio Venta</th>
-                            <td><input type="text" name="Precio_Platillo" value="<?php echo $alm->__GET('Precio_Platillo'); ?>" style="width:100%;" /></td>
+                            <td><input type="number" name="Precio_Platillo" value="<?php echo $alm->__GET('Precio_Platillo'); ?>" style="width:100%;" /></td>
                         </tr>
                         <tr>
                             <th style="text-align:left;">Ingredientes</th>
@@ -88,7 +88,7 @@ if(isset($_REQUEST['action']))
                         </tr>
                         <tr>
                             <th style="text-align:left;">Fecha Ingreso</th>
-                            <td><input type="text" name="FechaDeIngreso" value="<?php echo $alm->__GET('FechaDeIngreso'); ?>" style="width:100%;" /></td>
+                            <td><input type="date" name="FechaDeIngreso" value="<?php echo $alm->__GET('FechaDeIngreso'); ?>" style="width:100%;" /></td>
                         </tr>
                         <tr>
                             <td><input type="hidden" name="FechaDeEgreso" value="<?php echo $alm->__GET('FechaDeEgreso'); ?>" style="width:100%;" /></td>
