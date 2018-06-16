@@ -70,7 +70,7 @@ if(isset($_REQUEST['action']))
                     <table style="width:500px;">
                         <tr>
                             <th style="text-align:left;">Existencia</th>
-                            <td><input type="text" name="Existencia" value="<?php echo $alm->__GET('Existencia'); ?>" style="width:100%;" /></td>
+                            <td><input type="number" name="Existencia" value="<?php echo $alm->__GET('Existencia'); ?>" style="width:100%;" /></td>
                         </tr>
                         <tr>
                             <th style="text-align:left;">Categoria</th>
@@ -82,7 +82,7 @@ if(isset($_REQUEST['action']))
                         </tr>
                         <tr>
                             <th style="text-align:left;">Precio</th>
-                            <td><input type="text" name="Precio" value="<?php echo $alm->__GET('Precio'); ?>" style="width:100%;" /></td>
+                            <td><input type="number" name="Precio" value="<?php echo $alm->__GET('Precio'); ?>" style="width:100%;" /></td>
                         </tr>
 						<tr>
                             <th style="text-align:left;">Medida</th>
@@ -90,18 +90,18 @@ if(isset($_REQUEST['action']))
                         </tr>
 						<tr>
                             <th style="text-align:left;">Gestor Minimo</th>
-                            <td><input type="text" name="Gestor_Min" value="<?php echo $alm->__GET('Gestor_Min'); ?>" style="width:100%;" /></td>
+                            <td><input type="number" name="Gestor_Min" value="<?php echo $alm->__GET('Gestor_Min'); ?>" style="width:100%;" /></td>
                         </tr>
 						<tr>
                             <th style="text-align:left;">Gestor Maximo</th>
-                            <td><input type="text" name="Gestor_Max" value="<?php echo $alm->__GET('Gestor_Max'); ?>" style="width:100%;" /></td>
+                            <td><input type="number" name="Gestor_Max" value="<?php echo $alm->__GET('Gestor_Max'); ?>" style="width:100%;" /></td>
                         </tr>
                         <tr>
                             <td><input type="hidden" name="Status" value="<?php echo $alm->__GET('Status'); ?>" style="width:100%;" /></td>
                         </tr>
                         <tr>
                             <th style="text-align:left;">Fecha Ingreso</th>
-                            <td><input type="text" name="FechaDeIngreso" value="<?php echo $alm->__GET('FechaDeIngreso'); ?>" style="width:100%;" /></td>
+                            <td><input type="date" name="FechaDeIngreso" value="<?php echo $alm->__GET('FechaDeIngreso'); ?>" style="width:100%;" /></td>
                         </tr>
                         <tr>
                             <td><input type="hidden" name="FechaDeEgreso" value="<?php echo $alm->__GET('FechaDeEgreso'); ?>" style="width:100%;" /></td>
