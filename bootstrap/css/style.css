@@ -1,0 +1,672 @@
+:root{
+    --duration-trans: .8s;
+    --bg-btn-remove: #a81515;
+    --color-btn-remove: white;
+    --color-inputs: #4da8be; /*#3cbc8d*/
+    
+    /*social media properities*/
+    --br-sm: 10px 10px 10px 10px;
+    --duration-sm: .6s;
+    --border-color-sm: #8b222b;
+
+    --img-session-info: url('/Restaurante_website/Imagenes/brown.png');
+    --img-contact: url('/Restaurante_website/Imagenes/container_info.png');
+    --img-header: url('/Restaurante_website/Imagenes/container_header.png');
+
+    /*img forms*/
+    --form-empleados: url('/Restaurante_website/Imagenes/container_form_empleados.png');
+    --form-clientes: url('/Restaurante_website/Imagenes/container_form_clientes.png');
+    --form-platillos: url('/Restaurante_website/Imagenes/container_form_platillos.png');
+    --form-ventas: url('/Restaurante_website/Imagenes/container_form_ventas.png');
+
+    /*img body tag*/
+    --img-empleados: url('/Restaurante_website/Imagenes/bg_employee.jpg');
+    --img-clientes: url('/Restaurante_website/Imagenes/bg_client.jpg');
+    --img-platillos: url('/Restaurante_website/Imagenes/bg_dishes.jpg');
+    --img-ventas: url('/Restaurante_website/Imagenes/bg_sales.jpg');
+    --img-mesero: url('/Restaurante_website/Imagenes/bg_comandas.jpg');
+    --img-salon-comedor: url('/Restaurante_website/Imagenes/bg_comandas.jpg');
+    --img-dashboard: url('/Restaurante_website/Imagenes/bg_dashboard.jpg');
+    --img-log-in: url('/Restaurante_website/Imagenes/wallpaper.jpg');
+    --img-mesas: url('/Restaurante_website/Imagenes/bg_mesas.jpg');
+}
+
+* {
+   box-sizing: border-box;
+}
+
+td::selection,th::selection,h5::selection,h4::selection,h2::selection,h1::selection,strong::selection,
+p::selection{
+   background: #44a544;
+   color: #fff;
+}
+
+input,textarea,select{
+    border-radius: 15px;
+    font-size: 18px;
+    text-align: center;
+    background: var(--color-inputs);
+    width: 225px;
+    height: 40px;
+    position: relative;
+    opacity: 1;
+    outline: none;
+    transition: all .6s;
+    border: 1px solid #13829e;
+    
+}
+
+textarea{
+   width:430px; 
+   height:150px
+}
+
+select{
+   padding-left:80px;
+   padding-right:50px;
+   font-size: 19px;
+   font-weight: 600;
+}
+
+/*body tag properties*/
+body{
+   font-family: Florence, cursive;
+   background-repeat: no-repeat; 
+   background-attachment: fixed; 
+}
+
+.body-empleados{
+   background-image: var(--img-empleados);
+}
+
+.body-clientes{
+   background-image: var(--img-clientes);
+}
+
+.body-ventas{
+   background-image: var(--img-ventas);
+}
+
+.body-platillos{
+   background-image: var(--img-platillos);
+}
+
+.body-mesero{
+   background-image: var(--img-platillos);
+}
+
+.body-salon-comedor{
+   background-image: var(--img-salon-comedor);
+}
+
+.body-dashboard{
+   background-image: var(--img-dashboard);
+}
+
+.body-logIn{
+   background-image: var(--img-log-in)
+}
+
+.body-mesas{
+   background: var(--img-mesas) no-repeat center center fixed;
+   background-size: cover;
+}
+/*body tag properties*/
+
+.header{
+   margin-top: 15px;
+   width: 735px;
+   height: 121px;
+   color: white;
+   border-radius: 10px;
+   margin-left: 300px;
+   text-align: center;
+   font-size: 20px;
+   background-image: var(--img-header);
+   background-repeat: no-repeat;
+}
+
+.header-salon{
+   border-image-width: 30px;
+   height: 80px;
+   padding-top: 10px
+}
+
+.nav-headers{
+   transition: .8s;
+   background: #dbceb1;
+}
+
+.nav-foto{
+   border-radius: 20px;
+}
+
+.nav-link{
+   color: #ec8805;
+   font-weight: 700;
+}
+
+/*nav hover*/
+.nav-headers:hover{
+   transition: .8s;
+   background: #856404;
+}
+
+.nav-close-session:hover{
+   transition: .8s;
+   background: #cf0b0b;
+}
+
+.nav-link:hover{
+   color: white; 
+}
+
+/*nav hover*/
+.btn-remove-hover:hover{
+   background: var(--bg-btn-remove);
+   color: var(--color-btn-remove);
+}
+
+.social-media{
+   border-radius: var(--br-sm);
+   transition: var(--duration-sm);
+}
+
+.social-media:hover{
+   border: 1px solid var(--border-color-sm);
+   transition: var(--duration-sm);
+}
+
+.container-msg-default,.container-msg-success,.container-msg-failure{
+   margin-left: 270px;
+   width: 810px;
+   height: 60px;
+   background: #2f50aa;
+   color: white;
+   border-radius: 10px 10px 10px 10px;
+   font-size: 28px;
+   padding-left : 15px;
+   padding-top: 5px;
+   text-align: center;
+}
+
+.container-msg-default{
+   height: 0;
+   opacity: 0;
+}
+
+.container-msg-failure{
+   background: #b91e26;
+}
+
+input[type=button]:hover,input[type=submit]:hover,button:hover{
+   background: #041575; 
+   color: white;
+   transition: var(--duration-trans);
+}
+
+label{
+   width: 410px;
+   text-align: center;
+   font-size: 18px;
+}
+
+textarea:focus,input[type=text]:focus,input[type=password]:focus,input[type=date]:focus,input[type=number]:focus,input[type=time]:focus{
+    background: #34495E;
+    color: white;
+}
+
+button, input[type=button],input[type=submit]{
+    border-radius:15px;
+    cursor: pointer; 
+    width: auto;
+    height:  40px; 
+    border: 4px solid rgb(255, 123, 0);
+    font-weight: bold;
+    font-size: 17px;
+    background: white;
+    transition: var(--duration-trans);
+}
+
+input[type=file]{
+    background-color: var(--color-inputs);
+    border-bottom: 3px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+p{
+    font-size: 20px;
+    color: white;
+}
+
+/*Modals*/
+.modal-dialog{
+   box-shadow: 0 0 20px 20px grey;
+   border-radius: 10px
+}
+
+.modal-header,.modal-footer{
+   background: rgb(0, 178, 116)
+}
+
+.modal-content{
+   background: -webkit-linear-gradient(#b2e2d2,grey)
+}
+
+.modal-title{
+   color: #7C6B1F;
+   font-weight: 700
+}
+
+.modal-body{
+   color:black;
+}
+/*Modals*/
+
+.platillos-dash, .mesas{ 
+   width: 160px;
+   height: 150px;
+   border-radius: 15px;
+   align-content: center;
+   cursor: pointer;
+   margin: 5px;
+   border: 7px solid #ffc107; 
+   transition: .4s;
+}
+
+.mesas:hover{
+   transition: .6s;
+}
+
+.platillos-dash:hover{ 
+   border: 9px solid rgb(127, 202, 29);
+   transition: .4s;
+}
+
+.foto-dash, .foto-modules{
+   width: 220px;
+   height: 210px;
+   border-radius: 110px;
+   align-content: center;
+   margin: 5px;
+   border: 10px solid #e70e0e;
+   margin: 10px;
+}
+
+.ingredientes-dash{
+   width: 1110px;
+   height: auto;
+   background-color:rgb(196, 171, 32);
+   opacity: 0.9;
+   border-radius: 0px 0px 15px 15px;
+   color: darkkhaki;
+}
+
+.container-dishes{
+   width: 1025px;
+   height: auto;
+   background-image: url('/Restaurante_website/Imagenes/container_dishes.png');
+   opacity: 0.9;
+   border-radius: 15px 15px 15px 15px;
+   margin-left: 155px;
+}
+
+.container-dishes-venta-platillo{
+   width: 805px;
+   margin-right:auto;
+   margin-left:auto;
+   height: 365px;
+   background-image: url('/Restaurante_website/Imagenes/carta.png');
+   background-repeat: no-repeat;
+   opacity: 0.9;
+   overflow-y: auto;
+   border-radius: 15px;
+   text-align: center;
+   padding-top: 5px;
+}
+
+.container-tables{
+   width:750px;
+   padding-top: 15px;
+   padding-left:35px;
+   margin-right:auto;
+   margin-left:auto;
+   height: 500px;
+   background-image: url('/Restaurante_website/Imagenes/container_mesas.png');
+   opacity: 0.9;
+   border-radius: 15px 15px 15px 15px;
+   overflow-y: auto;
+   align-self: center;
+}
+
+.container-customers{
+   width: 815px;
+   height: 365px;
+   padding-right:10px;
+   padding-left:65px;
+   margin-right:auto;
+   margin-left:auto;
+   /*background-color:rgb(151, 153, 21);*/
+   background-image: url('/Restaurante_website/Imagenes/container_clientes.png');
+   opacity: 0.9;
+   border-radius: 15px 15px 15px 15px;
+   overflow-y: auto;
+}
+
+.container-session{
+   width: 37%;
+   height: 294px;
+   float: left;
+   margin-left: 155px;
+   border-radius: 15px;
+   background-image: var(--img-session-info);
+   background-repeat: no-repeat;
+   opacity: .9;
+}
+
+.container-contact{
+   width: 505px;
+   height: 294px;
+   background-image: var(--img-contact);
+   opacity: .8;
+   border-radius: 15px;
+   color:black;
+   float: right;
+   margin-right: 165px;
+   overflow: none
+}
+
+.container-footer{
+   width: 1150px;
+   margin-left: 100px;
+   height: 300px;
+   border-radius: 10px;
+   background-image: url("/Restaurante_website/Imagenes/footer.png");
+}
+
+.container-comanda{
+   width:805px;
+   padding-right:30px;
+   padding-left:160px;
+   padding-top: 10px;
+   margin-right:auto;
+   margin-left:auto;
+   height: 265px;
+   background-image: url("/Restaurante_website/Imagenes/container_comanda.png");
+   color: black;
+   font-weight: 700;
+   opacity: 0.9;
+   border-radius: 15px 15px 15px 15px;
+}
+
+.container-send-comanda{
+   width:805px;
+   padding-right:30px;
+   padding-left:110px;
+   padding-top: 10px;
+   margin-right:auto;
+   margin-left:auto;
+   background-image: url('/Restaurante_website/Imagenes/container_send_comanda.png');
+   opacity: 0.9;
+   border-radius: 15px 15px 15px 15px;
+   color:black;
+}
+
+h3, h4, h2{
+   color: white;
+}
+
+/*forms*/
+.container_form{
+   color: white;
+   width:816px;
+   /*width: 60%;*/
+   padding: 50px;
+   padding-right:10px;
+   padding-left:50px;
+   margin-right:auto;
+   margin-left:auto; 
+   border-radius: 15px;
+   opacity: 0.9;
+   background-repeat: no-repeat;
+}
+
+.form-empleados{
+   background-image: var(--form-empleados);
+}
+
+.form-clientes{
+   background-image: var(--form-clientes);
+}
+
+.form-platillos{
+   background-image: var(--form-platillos);
+}
+
+.form-ventas{
+   background-image: var(--form-ventas);
+}
+/*forms*/
+
+.container_search{
+  color: white;
+  background-image: url("/Restaurante_website/Imagenes/container_search.png");
+  background-repeat: no-repeat;
+  width:816px;
+  padding-right:10px;
+  padding-left:50px;
+  margin-right:auto;
+  margin-left:auto; 
+  border-radius: 15px;
+  opacity: 0.9;
+}
+
+.con_search_platillos{
+   background-image: url("/Restaurante_website/Imagenes/container_search_platillos.png");
+}
+
+.container_table{
+   color: white;
+   background-image: url("/Restaurante_website/Imagenes/table_row.png");
+   width: 1400px;
+   padding-right:0px;
+   padding-left:0px;
+   margin-right:auto;
+   margin-left:auto; 
+   border-radius: 15px;
+   overflow-x: scroll;
+   overflow-y: auto;
+   height: 500px;
+   opacity: 0.9;
+}
+
+.container_table_small, .container-table{
+   color: white;
+   background-image: url("/Restaurante_website/Imagenes/table_row.png");
+   width: 1000px;
+   height: 500px;
+   padding-right:0px;
+   padding-left:0px;
+   margin-right:auto;
+   margin-left:auto; 
+   border-radius: 15px;
+   overflow-x:auto;
+   overflow-y:auto;
+   opacity: 0.9;
+}
+
+.container_table_small{
+   width: 1030px;
+}
+
+.container_table_small_mini{
+   color: white;
+   background-image: url("/Restaurante_website/Imagenes/table_row.png");
+   width: 730px;
+   height: 500px;
+   padding-right:0px;
+   padding-left:0px;
+   margin-right:auto;
+   margin-left:auto; 
+   border-radius: 15px;
+   overflow-x:scroll;
+   overflow-y:auto;
+   opacity: 0.9;
+}
+
+.filtro{
+    background-color: #0056b3;
+}
+
+@media (min-width:576px){
+   .container_form, .container_search{
+       max-width:540px
+   }
+   .container_table{
+       max-width:740px
+   }
+   .container_table_small{
+       max-width:540px
+   }
+   .container_table_small_mini{
+       max-width: 440px
+   }
+}
+
+@media (min-width:768px){
+   .container_form, .container_search{
+       max-width:720px
+   }
+   .container_table{
+       max-width:720px
+   }
+   .container_table_small{
+       max-width:540px
+   }
+   .container_table_small_mini{
+       max-width: 440px
+   }
+}
+
+@media (min-width:992px){
+   .container_form, .container_search{
+       max-width:960px
+   }
+   .container_table{
+       max-width:960px
+   }
+   .container_table_small{
+       max-width:740px
+   }
+   .container_table_small_mini{
+       max-width: 540px
+   }
+}
+
+@media (min-width:1200px){
+   .container_form, .container_search{
+       max-width:1140px
+   }
+   .container_table{
+       max-width:1337px
+   }
+   .container_table_small{
+       max-width:1100px
+   }
+   .container_table_small_mini{
+       max-width: 940px
+   }
+}
+
+nav{
+   height: 35px;
+   border-radius: 15px 15px 15px 15px;
+   background-color: #856404;
+}
+
+.th_lista, .td_lista{
+   padding: 15px;
+   text-align: left;
+   border-bottom: 1px solid black;
+}
+
+.th_lista{
+   background-image: url('/Restaurante_website/Imagenes/table_header.png');
+}
+
+.th-border-left{
+   border-radius: 15px 0px 0px 0px;
+}
+
+.th-border-right{
+   border-radius: 0px 15px 0px 0px;
+}
+
+.th-border-total{
+   border-radius: 0px 0px 15px 15px;
+}
+
+th{
+   font-size: 18px
+}
+
+table{
+   border-radius: 15px 15px 15px 15px;
+}
+
+.row_selected{
+   border-bottom: 3px solid orangered; 
+}
+
+.row_selected:hover {
+   background-color:orangered;
+   color: black;
+   font-weight: 600;
+}
+
+.fixed {
+   position: fixed;
+}
+
+/*Input File*/
+ .js .input-file-trigger {
+   display: block;
+   padding: 14px 45px;
+   background: var(--color-inputs);
+   color:black;
+   text-align: center;
+   font-size: 1em;
+   transition: all .6s;
+   cursor: pointer;
+   width: 180px;
+   border-radius: 15px 15px 15px 15px;
+ }
+ .js .input-file {
+   opacity: 0;
+   cursor: pointer;
+ }
+ .js .input-file:hover + .input-file-trigger,
+ .js .input-file:focus + .input-file-trigger,
+ .js .input-file-trigger:hover,
+ .js .input-file-trigger:focus {
+   background: #34495E;
+   color: var(--color-inputs);
+ }
+ 
+ .file-return {
+   margin: 0;
+   color: black;
+ }
+ .file-return:not(:empty) {
+   margin: 1em 0;
+ }
+ .js .file-return {
+   font-size: 18px;
+   font-weight: bold;
+ }
+ .js .file-return:not(:empty):before {
+   content: "Imagen: ";
+   font-style: normal;
+   font-weight: normal;
+ }
