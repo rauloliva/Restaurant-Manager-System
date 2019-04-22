@@ -1,0 +1,57 @@
+body {
+  background-image: url('/Restaurante_website/Imagenes/404.jpg'); 
+  font-family: 'Roboto', sans-serif;
+  background-repeat:repeat; 
+  background-attachment: scroll;
+}
+
+.mega, .bola, .mini, .mini2, .mini3{
+  line-height: 1.65em;
+  font-weight: bold;
+  font-size: 11em;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  width: 300px;
+  height: 300px;
+  margin-left: 500px;
+  margin-top: 0px;
+  position: absolute;
+}
+
+.mini {
+  width: 560px;
+  font-size: 30px;
+  margin-top: 250px; 
+  margin-left: 400px; 
+  position: absolute;
+}
+
+.mini2{
+  width: 560px;
+  font-size: 30px;
+  margin-top: 290px; 
+  margin-left: 400px; 
+  position: absolute;
+}
+
+.mini3{
+  width: 560px;
+  font-size: 30px;
+  margin-top: 330px; 
+  margin-left: 400px; 
+  position: absolute;
+}
+
+.home{
+  margin-top: 370px;
+  margin-left: 580px;
+}
+ 
+.boom{
+  margin-right:110px;
+}
+
+i{
+  color: rgb(152, 240, 140);
+  background: red
+}
