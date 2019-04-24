@@ -13,3 +13,5 @@ And it counts with an administrator which credentials are: <b>Username: </b>admi
   <li>Dining room manager</li>
   <li>Orders manager</li>
 </ul>
+<br>
+<p>This is part of a school's proyect</p>
