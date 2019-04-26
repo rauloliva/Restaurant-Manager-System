@@ -14,5 +14,12 @@ And it counts with an administrator which credentials are: <b>Username: </b>admi
   <li>Orders manager</li>
 </ul>
 <br>
+<p>Below you can find the requirements for the perfect functioning of the site</p>
+<h4>Requirements:</h4>
+<ul>
+  <li>install the manager package of php, Composer/li>
+  <li>Install the html2pdf from composer</li>
+</ul>
+<br>
 <p>Unfortunately the documentacion is in spanish, the only part in english is the abstract that you can find inside the docx file</p>
 <p>This is part of a school's proyect</p>
