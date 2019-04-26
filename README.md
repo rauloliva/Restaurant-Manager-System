@@ -17,7 +17,7 @@ And it counts with an administrator which credentials are: <b>Username: </b>admi
 <p>Below you can find the requirements for the perfect functioning of the site</p>
 <h4>Requirements:</h4>
 <ul>
-  <li>install the manager package of php, Composer/li>
+  <li>install the manager package of php, Composer</li>
   <li>Install the html2pdf from composer</li>
   <li>Install and running apache with php 7.2 (recommended)</li>
 </ul>
