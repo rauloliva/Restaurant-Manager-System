@@ -14,4 +14,5 @@ And it counts with an administrator which credentials are: <b>Username: </b>admi
   <li>Orders manager</li>
 </ul>
 <br>
+<p>Unfortunately the documentacion is in spanish, the only part in english is the abstract that you can find inside the docx file</p>
 <p>This is part of a school's proyect</p>
