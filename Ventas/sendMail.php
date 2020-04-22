@@ -12,8 +12,8 @@
         );                               // Set mailer to use SMTP
         $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
         $mail->SMTPAuth = true;                      // Enable SMTP authentication
-        $mail->Username = 'oliva.raul12@gmail.com';  // SMTP username
-        $mail->Password = 'rauloliva12';               // SMTP password
+        $mail->Username = '@@@@@@@';  // SMTP username
+        $mail->Password = '@@@@@@@';               // SMTP password
         $mail->From = 'oliva.raul12@gmail.com';
         $mail->FromName = 'Gerente del Restaurante';
         $mail->addAddress($_GET['correo'], $_GET['nom_cliente']);     // Add a recipient
